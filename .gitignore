@@ -1,0 +1,27 @@
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+# Environment
+.env
+# Runtime
+data/*.db
+data/acquisitions/*
+data/reports/*
+logs/
+tmp/
+*.log
+# Frontend/build
+node_modules/
+dist/
+build/
+coverage/
+# ML
+models/*.joblib
+models/*.pkl
+# IDE/OS
+.vscode/
+.idea/
+.DS_Store

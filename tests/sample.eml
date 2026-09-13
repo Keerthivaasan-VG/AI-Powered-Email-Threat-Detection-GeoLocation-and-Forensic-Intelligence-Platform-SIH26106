@@ -1,0 +1,21 @@
+From: sender@example.com
+To: victim@example.net
+Reply-To: attacker@evil.example
+Subject: Urgent account verification
+Date: Sun, 13 Sep 2026 12:00:00 +0000
+Message-ID: <abc@example.com>
+Authentication-Results: mx.example.net; spf=fail dkim=fail dmarc=fail
+Received: from host [203.0.113.10] by mx.example.net with ESMTP; Sun, 13 Sep 2026 11:59:00 +0000
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="X"
+
+--X
+Content-Type: text/plain
+
+Please verify at http://203.0.113.10:8080/login
+--X
+Content-Type: application/octet-stream
+Content-Disposition: attachment; filename="invoice.pdf.exe"
+
+FAKE
+--X--
